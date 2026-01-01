@@ -53,9 +53,7 @@ function EarlyAccessCard({ compact = false, variant = "default" }) {
   const [metrics, setMetrics] = useState(() => getMetrics());
   const [busy, setBusy] = useState(false);
 
-  useEffect(() => {
-    setMetrics(getMetrics());
-  }, []);
+
 
   const submit = async (e) => {
     e.preventDefault();
